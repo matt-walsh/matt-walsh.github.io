@@ -19,12 +19,12 @@ var GithubService = (function () {
         this.username = "matt-walsh";
     }
     GithubService.prototype.getUser = function () {
-        return this._http.get("http://api.github.com/users/" + this.username)
+        return this._http.get("https://api.github.com/users/" + this.username)
             .map(function (res) { return res.json(); });
     };
     ;
     GithubService.prototype.getRepos = function () {
-        return this._http.get("http://api.github.com/users/" + this.username + "/repos")
+        return this._http.get("https://api.github.com/users/" + this.username + "/repos")
             .map(function (res) { return res.json(); });
     };
     ;
