@@ -17,17 +17,16 @@ h3{
     font-weight: bold;
 }
 
-p{
-    color: #424242;
-    font-size: 1em;
-    padding:2em;
-}
-
 
 .col-md-3{
     height: 15em;
     border: .1em solid white;
     box-sizing: border-box;
+}
+
+.panel-overlay p{
+    color: #424242;
+    font-size: 1em;
 }
 
 .panel-label{
@@ -38,29 +37,27 @@ p{
 /*Skill Tile Effects*/
 .panel-overlay{
     position: absolute;
-    font-size: 0.5em;
+    font-size: 0.7em;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #ADD8E6;
 }
 
 
 .panel-text p{
-    color: white;
+    color: #343434;
 }
 
 .panel-text a{
     text-decoration: underline;
-}
-.panel-text a{
-    color: white;
+    color: #343434;
 }
 .panel-text{
-    color: white;
+    color: White;
     font-size: 1.3em;
     position: absolute;
     top: 50%;
@@ -94,17 +91,23 @@ p{
 /*Education List Effects*/
 .expand-toggle{
     opacity: 0;
-    float: left;
+
 }
 
 .education-details .row{
-    background-color: #fff;
+    background-color: #E5E4E2;
     margin-left: 15%;
     margin-right: 15%;
-    padding-bottom:5%;
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.education-details .col-md-6{
+    border: solid;
+}
+.education-details .col-md-4{
+    border: solid;
 }
 
 .label-style{
@@ -118,14 +121,15 @@ p{
 /*Begin Programming Education Section*/
 .prog-section{
     display: block;
+    padding-bottom: 2%;
 }
 
 #prog-toggle:checked + #prog-label::after{
-    content: " - ";
+    content: " Collapse ";
 }
 
 #prog-toggle + #prog-label::after{
-    content: " + ";
+    content: " Click for  Details";
 }
 
 #prog-details{
@@ -141,14 +145,15 @@ p{
 /*Begin CET Education Section*/
 .cet-section{
     display: block;
+    padding-bottom: 2%;
 }
 
 #cet-toggle:checked + #cet-label::after{
-    content: " - ";
+    content: " Collapse ";
 }
 
 #cet-toggle + #cet-label::after{
-    content: " + ";
+    content: " Click for Details ";
 }
 
 #cet-details{
