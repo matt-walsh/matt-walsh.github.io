@@ -17,7 +17,34 @@ h3{
     font-weight: bold;
 }
 
+.row-details {
+    padding: 1em;
+}
 
+/*Landing Container Styles */
+.landing-container {
+    font-family: 'ABeeZee', sans-serif;
+    color: white;
+    background-color: #424242;
+    height: 300px;
+    text-align: center;
+    margin: -16px -17px;
+}
+#creator-name {
+    padding: 2%;
+    font-size: 40px;
+}
+#career-focus {
+    font-size: 30px;
+    padding: 0;
+}
+#dev-icon {
+    padding-top: 2em;
+    height: 35%;
+    border-radius: 5px;
+}
+
+/*Skill Tile Styles */
 .col-md-3{
     height: 15em;
     border: .1em solid white;
